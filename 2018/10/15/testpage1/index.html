@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="CYY&#39;s TechSpace">
 <meta property="og:description" content="TEST-2 Welcome to StackEdit!Hi! I’m your first Markdown file in StackEdit. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have fini">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-22T16:07:15.823Z">
+<meta property="og:updated_time" content="2018-10-23T01:44:18.473Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="testpage1">
 <meta name="twitter:description" content="TEST-2 Welcome to StackEdit!Hi! I’m your first Markdown file in StackEdit. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have fini">
@@ -88,7 +88,37 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="TEST-2-Welcome-to-StackEdit"><a href="#TEST-2-Welcome-to-StackEdit" class="headerlink" title="TEST-2 Welcome to StackEdit!"></a>TEST-2 Welcome to StackEdit!</h1><p>Hi! I’m your first Markdown file in <strong>StackEdit</strong>. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the <strong>file explorer</strong> on the left corner of the navigation bar.</p>
-<h1 id="插入在线图片示例"><a href="#插入在线图片示例" class="headerlink" title="插入在线图片示例"></a>插入在线图片示例</h1><h1 id="Files"><a href="#Files" class="headerlink" title="Files"></a>Files</h1><p>All your files are listed in the file explorer. You can switch from one to another by clicking a file in the list.</p>
+<h1 id="插入在线图片示例"><a href="#插入在线图片示例" class="headerlink" title="插入在线图片示例"></a>插入在线图片示例</h1><h1 id="嵌入HTML示例"><a href="#嵌入HTML示例" class="headerlink" title="嵌入HTML示例"></a>嵌入HTML示例</h1><p style="text-align:center;"><br>    居中<br></p><br><p><br>    左对齐<br></p><br><p style="text-align:right;"><br>    右对齐<br></p><br><p><br>    <span style="background-color:#FFE500;">字体背景改色</span><br></p><br><p><br>    <span style="color:#337FE5;">字体改色</span><br></p>
+
+<h1 id="插入百度地图-API-JS示例"><a href="#插入百度地图-API-JS示例" class="headerlink" title="插入百度地图 API JS示例"></a>插入百度地图 API JS示例</h1><script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=UWe88iyjlbemz94FfvjbgnHBAVqu0tcj"></script>
+<div id="allmap" style="height: 500px;width:800px;"></div>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");    // 创建Map实例
+    map.centerAndZoom("梧州",10);  // 初始化地图,设置中心点坐标和地图级别
+    //添加地图类型控件
+    map.addControl(new BMap.MapTypeControl({
+        mapTypes:[
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+        ]}));
+    var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+    var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+    //var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+    /*缩放控件type有四种类型:
+    BMAP_NAVIGATION_CONTROL_SMALL：仅包含平移和缩放按钮；BMAP_NAVIGATION_CONTROL_PAN:仅包含平移按钮；BMAP_NAVIGATION_CONTROL_ZOOM：仅包含缩放按钮*/
+    map.setCurrentCity("梧州");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+    add_control()
+    function add_control(){
+        map.addControl(top_left_control);        
+        map.addControl(top_left_navigation);     
+        //map.addControl(top_right_navigation);    
+    }
+</script>
+
+
+<h1 id="Files"><a href="#Files" class="headerlink" title="Files"></a>Files</h1><p>All your files are listed in the file explorer. You can switch from one to another by clicking a file in the list.</p>
 <h2 id="Rename-a-file"><a href="#Rename-a-file" class="headerlink" title="Rename a file"></a>Rename a file</h2><p>You can rename the current file by clicking the file name in the navigation bar or by clicking the <strong>Rename</strong> button in the file explorer.</p>
 <h2 id="Delete-a-file"><a href="#Delete-a-file" class="headerlink" title="Delete a file"></a>Delete a file</h2><p>You can delete the current file by clicking the <strong>Remove</strong> button in the file explorer. The file will be moved into the <strong>Trash</strong> folder and automatically deleted after 7 days of inactivity.</p>
 <h2 id="Export-a-file"><a href="#Export-a-file" class="headerlink" title="Export a file"></a>Export a file</h2><p>You can export the current file by clicking <strong>Export to disk</strong> in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.</p>
@@ -172,7 +202,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.icic.science/2018/10/15/testpage1/" data-id="cjnkhv9dt0001f8unpp5qpnlt" class="article-share-link">Share</a>
+      <a data-url="https://www.icic.science/2018/10/15/testpage1/" data-id="cjnl2hc8v0001owunkfwwghfu" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/k-j/">k j</a></li></ul>
